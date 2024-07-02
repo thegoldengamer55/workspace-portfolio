@@ -1,7 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./contact.css";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaGithub,
+  FaGithubAlt,
+  FaGithubSquare,
+  FaInstagram,
+  FaLinkedin,
+} from "react-icons/fa";
 
 const Contact = () => {
   const [result, setResult] = React.useState("");
@@ -95,6 +102,9 @@ const Contact = () => {
                   target="_blank"
                 >
                   <FaFacebook className="icon" />
+                </a>
+                <a href="https://github.com/thegoldengamer55" target="_blank">
+                  <FaGithubSquare className="icon" />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/darren-hayden-053560312"
