@@ -1,0 +1,35 @@
+@import url("https://api.fontshare.com/v2/css?f[]=synonym@300,400,500&f[]=amulya@400,500,700&display=swap");
+
+:root {
+  --font-1: "Synonym", sans-serif;
+  --font-2: "Amulya", sans-serif;
+  --blue-1: #304EF2;
+  --blue-2: #353FF2;
+  --blue-3: #201D73;
+  --transition: ease-in 300ms;
+  color-scheme: dark;
+}
+
+* {
+  scroll-behavior: smooth;
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Code for Firefox */
+::-moz-selection {
+
+  background-color: var(--blue-1);
+}
+
+::selection {
+  background-color: var(--blue-1);
+}
+
+body {
+  /* background-color: #1E0C26; */
+  background-color: #16091c;
+  /* Maybe make darker */
+}

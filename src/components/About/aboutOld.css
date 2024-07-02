@@ -1,0 +1,135 @@
+.about {
+    width: 100%;
+    margin-top: 250px;
+}
+
+.about-section {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.about-section h1 {
+    font-size: 50px;
+    font-family: var(--font-1);
+}
+
+.about-section h5 {
+    font-size: 22px;
+    font-family: var(--font-2);
+    font-weight: 300;
+}
+
+.about-content {
+    margin-top: 100px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 4rem;
+}
+
+.about-content .about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-content .about-me .about-me-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 4px solid var(--blue-1); */
+    padding: 60px;
+    /* height: 300px; */
+    border-radius: 40px;
+    background-color: #110716;
+}
+
+.about-content .about-me .about-me-content:hover {
+    transition: var(--transition);
+    background-color: #1c0b24;
+    margin-top: -10px;
+}
+
+
+.about-content .about-me p {
+    font-family: var(--font-2);
+}
+
+.about-content img {
+    width: 35%;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .about-content img {
+        display: none;
+    }
+
+    .about-content {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .about-content .about-me .about-me-content {
+        padding: 40px;
+        font-size: 19px;
+    }
+
+    .about-section h1 {
+        font-size: 40px;
+        font-family: var(--font-1);
+    }
+
+    .about-section h5 {
+        font-size: 22px;
+        font-family: var(--font-2);
+        font-weight: 300;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .about-content .about-me p {
+        font-family: var(--font-2);
+        font-size: 15px;
+    }
+
+    .about-section h1 {
+        font-size: 35px;
+        text-align: center;
+        font-family: var(--font-1);
+    }
+
+    .about-section h5 {
+        font-size: 20px;
+        text-align: center;
+        font-family: var(--font-2);
+        font-weight: 300;
+    }
+}
+
+.about-content .about-me .process-button:hover {
+    transition: var(--transition);
+    background-color: transparent;
+}
+
+.about-content .about-me .process-button {
+    color: white;
+    font-size: 22px;
+    background-color: var(--blue-1);
+    border: var(--blue-1) 4px solid blue;
+    border-radius: 50px;
+    padding: 0px 35px;
+    margin-left: 20px;
+    height: 50px;
+    width: 200px;
+    font-family: var(--font-2);
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--blue-1) solid 3px;
+}

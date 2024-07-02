@@ -1,0 +1,149 @@
+.process {
+    width: 100%;
+    margin-top: 150px;
+}
+
+.process-section {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.process-section-header {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.process-section-header h1 {
+    font-family: var(--font-1);
+    font-size: 50px;
+}
+
+.process-section-header h5 {
+    font-size: 22px;
+    font-family: var(--font-2);
+    font-weight: 300;
+}
+
+.process-section .steps {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 2rem;
+    margin-top: 50px;
+}
+
+.process-section .step {
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #110716;
+}
+
+.process-section .step:hover h2,
+h3,
+p {
+    color: white;
+    transition: var(--transition);
+}
+
+.process-section .step:hover {
+    transition: var(--transition);
+    background-color: #1c0b24;
+}
+
+.process-section .step .step-content {
+    display: flex;
+    /* height: 400px; */
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.process-section .step h2 {
+    font-size: 30px;
+    color: rgb(93, 93, 93);
+    font-family: var(--font-1);
+    margin-bottom: 10px;
+}
+
+.process-section .step h3 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 3px solid;
+    font-family: var(--font-1);
+}
+
+.process-section .step p {
+    color: rgb(191, 193, 208);
+    font-family: var(--font-2);
+}
+
+.process-section .step .contact-button {
+    font-size: 20px;
+    /* padding: 10px; */
+    background-color: var(--blue-1);
+    display: block;
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    font-family: var(--font-1);
+    font-weight: bold;
+    margin: 0 auto;
+    border: 3px solid var(--blue-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.process-section .step .contact-button:hover {
+    transition: var(--transition);
+    background-color: transparent;
+}
+
+@media screen and (max-width: 1024px) {
+    .process-section {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .process-section-header h1 {
+        font-family: var(--font-1);
+        font-size: 40px;
+    }
+
+    .process-section-header h5 {
+        font-size: 22px;
+        font-family: var(--font-2);
+        font-weight: 300;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .process-section-header h1 {
+        font-family: var(--font-1);
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .process-section-header h5 {
+        font-size: 22px;
+        font-family: var(--font-2);
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .process-section .step {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        padding-bottom: 40px;
+        background-color: #110716;
+    }
+}

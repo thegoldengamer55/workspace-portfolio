@@ -1,0 +1,271 @@
+.sideBtnsContainer {
+  .plusContainer {
+    position: fixed;
+    right: 50px;
+    bottom: 40%;
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    transition: var(--transition);
+
+    .plus,
+    .minus {
+      color: var(--blue-1);
+      font-size: 20px;
+      transition: var(--transition);
+    }
+
+    .hide {
+      display: none;
+    }
+  }
+  .plusContainer:hover {
+    background-color: var(--blue-1);
+    cursor: pointer;
+    .plus,
+    .minus {
+      color: white;
+    }
+  }
+
+  .hide {
+    display: none;
+    transition: var(--transition);
+  }
+
+  .sideBtns {
+    position: fixed;
+    right: 50px;
+    bottom: 25%;
+    display: flex;
+    flex-direction: column;
+    // background-color: red;
+    gap: 2rem;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--blue-1);
+      color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 30px;
+      border: none;
+      transition: var(--transition);
+    }
+
+    a:hover {
+      background-color: white;
+      color: var(--blue-1);
+    }
+
+    .about {
+      position: fixed;
+      bottom: 55%;
+      //   right: 125px;
+    }
+    .projects {
+      position: fixed;
+      bottom: 50%;
+      right: 125px;
+    }
+    .process {
+      position: fixed;
+      bottom: 40%;
+      right: 150px;
+    }
+    .upArrow {
+      position: fixed;
+      right: 40px;
+      bottom: 12.5%;
+      background-color: rgba($color: #000000, $alpha: 0);
+      color: white;
+      width: 60px;
+      height: 60px;
+      font-size: 35px;
+      border: 2px solid white;
+      transition: var(--transition);
+
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .pricing {
+      position: fixed;
+      right: 125px;
+      bottom: 30%;
+    }
+
+    .contact {
+      position: fixed;
+      bottom: 30%;
+    }
+
+    .emptyPlaceholder {
+      visibility: hidden;
+    }
+
+    .upArrow:hover {
+      transition: var(--transition);
+      color: var(--blue-1);
+      border-color: var(--blue-1);
+      background-color: white;
+    }
+  }
+}
+
+.bottomBtnsContainer {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .sideBtnsContainer {
+    display: none;
+  }
+  .bottomBtnsContainer {
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    .plusContainer {
+      position: fixed;
+      bottom: 10px;
+      gap: 2rem;
+      background-color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 30px;
+      border: none;
+      transition: var(--transition);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .plus,
+      .minus {
+        color: var(--blue-1);
+        font-size: 20px;
+        transition: var(--transition);
+      }
+
+      .hide {
+        display: none;
+      }
+    }
+    .plusContainer:hover {
+      background-color: var(--blue-1);
+      cursor: pointer;
+      .plus,
+      .minus {
+        color: white;
+      }
+    }
+
+    .hide {
+      display: none;
+      transition: var(--transition);
+    }
+
+    .sideBtns {
+      position: fixed;
+      bottom: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      // background-color: red;
+      gap: 2rem;
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--blue-1);
+        color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 30px;
+        border: none;
+        transition: var(--transition);
+
+        li {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      a:hover {
+        background-color: white;
+        color: var(--blue-1);
+      }
+
+      .about {
+        position: fixed;
+        bottom: 10px;
+        margin-left: 200px;
+      }
+      .projects {
+        position: fixed;
+        bottom: 9%;
+        margin-left: 150px;
+      }
+      .process {
+        position: fixed;
+        bottom: 15%;
+        margin-left: 60px;
+      }
+      .pricing {
+        position: fixed;
+        bottom: 15%;
+        margin-right: 60px;
+      }
+      .contact {
+        position: fixed;
+        bottom: 9%;
+        margin-right: 150px;
+      }
+      .upArrow {
+        position: fixed;
+        bottom: 10px;
+        background-color: var(--blue-1);
+        color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 30px;
+        border: none;
+        transition: var(--transition);
+        margin-right: 200px;
+
+        li {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      .emptyPlaceholder {
+        // visibility: hidden;
+        z-index: -1;
+      }
+
+      //   .upArrow:hover {
+      //     transition: var(--transition);
+      //     color: var(--blue-1);
+      //     border-color: var(--blue-1);
+      //     background-color: white;
+      //   }
+    }
+  }
+}

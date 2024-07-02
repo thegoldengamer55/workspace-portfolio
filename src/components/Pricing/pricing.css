@@ -1,0 +1,196 @@
+.pricing {
+    width: 100%;
+    margin-top: 150px;
+}
+
+.pricing-header {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.pricing-section {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.pricing-header h1 {
+    font-family: var(--font-1);
+    font-size: 50px;
+}
+
+.pricing-header h5 {
+    font-size: 22px;
+    font-family: var(--font-2);
+    font-weight: 300;
+}
+
+.prices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 100px;
+}
+
+.price {
+    width: 300px;
+    height: 900px;
+    padding: 25px;
+    /* background-color: var(--blue-1); */
+    border: 2px solid var(--blue-1);
+    border-radius: 30px 30px 0px 0px;
+}
+
+.price:nth-of-type(2) {
+    border: 2px solid rgb(125, 0, 125);
+}
+
+.price:hover:nth-of-type(2) {
+    transition: var(--transition);
+    background: rgb(125, 0, 125);
+}
+
+.price:nth-of-type(3) {
+    border: 2px solid rgb(172, 0, 0);
+}
+
+.price:hover:nth-of-type(3) {
+    transition: var(--transition);
+    background: rgb(172, 0, 0);
+}
+
+.price:hover {
+    background: var(--blue-1);
+    transition: var(--transition);
+}
+
+.price h2 {
+    font-family: var(--font-1);
+    font-size: 30px;
+}
+
+.price h4 {
+    font-family: var(--font-2);
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.price-amount {
+    font-size: 75px;
+    text-align: center;
+    font-family: var(--font-2);
+    font-weight: 500;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.price ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: var(--font-2);
+    font-weight: 500;
+}
+
+.price li {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 17px;
+}
+
+.price li .check {
+    display: block;
+    width: 30px;
+    /* align-self: baseline; */
+}
+
+.price li .X {
+    display: block;
+    width: 25px;
+    /* align-self: baseline; */
+}
+
+.price li i {
+    font-size: 100px;
+    color: red;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .pricing-section {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .pricing-section {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .pricing-header h1 {
+        font-family: var(--font-1);
+        font-size: 40px;
+    }
+
+    .pricing-header h5 {
+        font-size: 22px;
+        font-family: var(--font-2);
+        font-weight: 300;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .price {
+        width: 70%;
+        height: 900px;
+        padding: 25px;
+        /* background-color: var(--blue-1); */
+        border: 2px solid var(--blue-1);
+        border-radius: 30px 30px 30px 30px;
+    }
+
+    .price li .check {
+        display: block;
+        width: 20px;
+        /* align-self: baseline; */
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .pricing-header h1 {
+        font-family: var(--font-1);
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .pricing-header h5 {
+        font-size: 22px;
+        font-family: var(--font-2);
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .price li .check {
+        display: block;
+        width: 30px;
+        /* align-self: baseline; */
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .price {
+        height: 1000px;
+    }
+
+    .price li .check {
+        display: block;
+        width: 40px;
+        /* align-self: baseline; */
+    }
+}
